@@ -1,0 +1,18 @@
+.pie{
+	background-color: #F0F0F1;
+	padding: 2% 0;
+	.derechos{
+		span{
+			display: block;
+			&:first-child{
+				line-height: 41px;
+			}
+		}
+	}
+	.social_media{
+		margin-top: 7%;
+		i{
+			margin: 3%;
+		}	
+	}
+}

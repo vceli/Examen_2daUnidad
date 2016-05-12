@@ -1,0 +1,19 @@
+@mixin style_h($color){
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: $color;
+}
+
+@mixin line_separator($width,$color){
+    margin: 5% 0 12%;
+    border: 1px solid $color;
+    width: $width;
+}
+
+@mixin bg_producto($url){
+	background-image: url("../../assets/images/"+$url+".png");
+	background-repeat: no-repeat;
+	background-position: center;
+    padding: 44% 0 2%;
+}

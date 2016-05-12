@@ -1,0 +1,26 @@
+.precios{
+	.box-precio{
+		background-color: #F0F0F1;
+		.producto{
+			width: 50%;
+			float: left;
+			&.producto1{
+				@include bg_producto('man88');
+			}
+			&.producto2{
+				@include bg_producto('rectangles29');
+			}
+			&.producto3{
+				@include bg_producto('database22');
+			}
+			&.producto4{
+				@include bg_producto('email162');
+			}
+		}
+	}
+	button{
+		color: white;
+		width: 100%;
+		background-color: #222222;
+		}
+}

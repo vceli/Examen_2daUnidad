@@ -1,0 +1,25 @@
+include helpers/mixins
+doctype html
+html(lang="en")
+	head
+		title Examen individual
+		meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.css")
+		link(rel="stylesheet", href="assets/css/bootstrap.css")
+		link(rel="stylesheet", href="assets/css/elegant.css")
+		//- link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900', type='text/css')
+		link(rel="stylesheet", href="assets/sass/main.css")
+
+	body
+		include views/header
+		include views/banner
+		include views/services
+		include views/welcome
+		include views/team
+		include views/precios
+		include views/contact
+		include views/footer
+		script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+		script(type='text/javascript' src='./assets/js/bootstrap.min.js')
+		script(src="./assets/js/main.js")

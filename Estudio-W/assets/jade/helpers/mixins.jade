@@ -1,0 +1,55 @@
+mixin media(url,title)
+	.row
+		.col-md-2
+			img.img-responsive(src='assets/images/'+url+'.png')
+		.col-md-10
+			h4= title
+			p Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+
+mixin box_team(url,title1,title2)
+	.foto_team.box
+		img.img-responsive(src='assets/images/'+ url +'.jpg', alt='foto team')
+	.about_team.box
+		h5= title1
+		h6= title2
+		p Sed metus eros, eleifend non porta et, gravida et augue. Phasellus non sapien metus. Morbi malesuada fringilla interdum. Nam vel facilisis.
+		.social_media
+					i.social_facebook
+					i.social_twitter
+					i.social_googleplus
+					i.social_pinterest
+					i.social_linkedin
+
+mixin box_team1(url,title1,title2)
+	.about_team.box
+		h5= title1
+		h6= title2
+		p Sed metus eros, eleifend non porta et, gravida et augue. Phasellus non sapien metus. Morbi malesuada fringilla interdum. Nam vel facilisis.
+		.social_media
+					i.social_facebook
+					i.social_twitter
+					i.social_googleplus
+					i.social_pinterest
+					i.social_linkedin
+	.foto_team.box
+		img.img-responsive(src='assets/images/'+ url +'.jpg', alt='foto team')
+
+mixin box_precios(title)
+	.box-precio
+		h4 Starter
+		h1= title
+		.producto.producto1
+			h5 20 USERS
+		.producto.producto2
+			h5 10 PAGES
+		.producto.producto3
+			h5 20 GB STORAGE
+		.producto.producto4
+			h5 100 EMAILS
+		button.btn.btn-default.btn-lg
+			|ORDER NOW
+
+mixin form-group(name,text)
+	.form-group
+		label.sr-only(for='#{name}') #{name} 
+		input.form-control(id='#{name}',type=type,placeholder='#{text}')

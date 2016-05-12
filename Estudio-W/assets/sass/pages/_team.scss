@@ -1,0 +1,18 @@
+.team{
+	padding-top: 10%;
+	.row-team{
+		h2{
+			@include style_h(black);
+		}
+		.line-separador{
+			@include line_separator(8%,black);
+		}
+		.box-team{
+			overflow: hidden;
+			.box{
+				width: 25%;
+				float:left;
+			}
+		}
+	}
+}

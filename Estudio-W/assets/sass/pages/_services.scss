@@ -1,0 +1,33 @@
+.services{
+	padding-top: 10%;
+	color: grey;
+	.bg_computer{
+		background-image: url("../../assets/images/bg3.jpg");
+		background-repeat: no-repeat;
+    	background-position: left;
+    	background-size: cover;
+    	padding: 65% 0;
+	}
+	.services-col2{
+		padding-left: 2.9%;
+		h2{
+			@include style_h(black);
+		}
+		h4{
+			font-weight: bold;
+		}
+		.line-separador{
+			@include line_separator(8%,black);
+		}
+		.line-separador+p{
+			font-size: 1.1em;
+    		color: grey;
+		}
+		.img-responsive{
+			padding-top: 39%;
+		}
+		.row{
+			padding: 4% 10.7% 4% 0;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.welcome{
+	margin-top: 10%;
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../../assets/images/bg3.jpg");
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8%;
+	h2{
+		@include style_h(white);
+	}
+	.line-separador{
+		@include line_separator(8%,white);
+	}
+}
